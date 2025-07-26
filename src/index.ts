@@ -1,1 +1,3 @@
-export const myPackage = (taco = ''): string => `${taco} from my package`;
+export { downloadFileToDestination } from './http/http';
+export { unzipFile } from './zip/unzip';
+export { downloadSpriggit } from './spriggit/spriggit';

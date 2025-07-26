@@ -1,13 +1,17 @@
-import { myPackage } from '../src';
+import { downloadFileToDestination, unzipFile, downloadSpriggit } from '../src';
 
 describe('index', () => {
-  describe('myPackage', () => {
-    it('should return a string containing the message', () => {
-      const message = 'Hello';
+  describe('exports', () => {
+    it('should export downloadFileToDestination function', () => {
+      expect(typeof downloadFileToDestination).toBe('function');
+    });
 
-      const result = myPackage(message);
+    it('should export unzipFile function', () => {
+      expect(typeof unzipFile).toBe('function');
+    });
 
-      expect(result).toMatch(message);
+    it('should export downloadSpriggit function', () => {
+      expect(typeof downloadSpriggit).toBe('function');
     });
   });
 });
