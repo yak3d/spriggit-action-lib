@@ -8,7 +8,7 @@ const spriggitZipPath = path.join('./', spriggitZipName);
 const spriggitPath = path.join('./', 'spriggit');
 const spriggitCli = path.join(spriggitPath, 'Spriggit.CLI');
 
-export const downloadSpriggit = async (version: string): Promise<string> => {
+export const downloadSpriggit = async (version: string): Promise<void> => {
   const url = `https://github.com/Mutagen-Modding/Spriggit/releases/download/${version}/${spriggitZipName}`;
 
   try {
