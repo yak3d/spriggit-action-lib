@@ -24,7 +24,7 @@
     "url": "git+https://github.com/ya3kd/spriggit-action-lib.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org"
   },
   "license": "MIT",
   "author": {
